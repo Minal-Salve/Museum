@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+body {
+    background-color: #1A1C19;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    border-radius: 50px;
+    border: 1px solid #B1A592;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    margin: 5px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 50px;
+    background-color: #323025;
+    color: #B1A592;
+    font-size: 18px;
+    border: 1px solid #B1A592;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #B1A592;
+    color: #333333;
+}
+
+#menuToggle {
+    display: none;
+}
+
+/* Main container layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+/* Left-side card */
+.item1 {
+    background-color: #DFD6C5;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#left-side-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.para-1 {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #323025;
+    color: #323025;
+    text-align: center;
+}
+
+.para-2 {
+    font-size: 36px;
+    color: #333333;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.card-1-arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #333333;
+}
+
+/* Right-side layout */
+.item-3 {
+    background-color: #8E886D;
+    height: 40vh;
+    width: 69vw;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#right-top-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-right-top {
+    width: 33vw;
+}
+
+/* Bottom cards layout */
+.bottom-cards-div {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card-1-bottom {
+    background-color: #916E58;
+    width: 34vw;
+    height: 59vh;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-2-bottom {
+    background-color: #B1A48E;
+}
+.card-btm-sec-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Media Queries */
+
+/* Small screens (max-width: 540px) */
+@media (max-width: 540px) {
+    #btn2, #btn3, #btn4, #btn5 {
+        display: none; /* Hide buttons */
+    }
+    #menuToggle {
+        display: inline-block;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .item1 {
+        width: 100%;
+        height: auto;
+    }
+
+    #left-side-image {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .item-3 {
+        width: 100%;
+    }
+
+    .bottom-cards-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-1-bottom {
+        width: 100%;
+    }
+
+    #img-right-top {
+        width: 90%;
+    }
+}
+
+/* Medium screens (540px - 840px) */
+@media (min-width: 540px) and (max-width: 840px) {
+    #btn2, #btn3, #btn4, #btn5 {
+        display: none;
+    }
+    #menuToggle {
+        display: inline-block;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .item1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-3 {
+        width: 100%;
+    }
+
+    .bottom-cards-div {
+        flex-direction: column;
+    }
+
+    .card-1-bottom {
+        width: 100%;
+    }
+
+    #img-right-top {
+        width: 80%;
+    }
+}
+
+/* Large screens (840px - 1140px) */
+@media (min-width: 840px) and (max-width: 1140px) {
+    .item1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-3 {
+        width: 100%;
+    }
+
+    .bottom-cards-div {
+        flex-direction: column;
+    }
+
+    .card-1-bottom {
+        width: 100%;
+    }
+
+    #img-right-top {
+        width: 80%;
+    }
+
+    .button {
+        height: 40px;
+        font-size: 16px;
+    }
+}
